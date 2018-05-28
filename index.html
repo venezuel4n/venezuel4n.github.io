@@ -120,8 +120,10 @@ style="border:1px solid #d3d3d3;">
     				var c = document.getElementById("myCanvas");
     				var ctx = c.getContext("2d");
 				var img = new Image();
+				var audio = new Audio('audio_file.mp3');
    				img.onload = function() { 
 					ctx.drawImage(img,10,10);
+					audio.play();
 				};
 				img.src ='https://www.html5canvastutorials.com/demos/assets/darth-vader.jpg';
 			};
