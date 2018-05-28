@@ -122,8 +122,9 @@ style="border:1px solid #d3d3d3;">
     				var c = document.getElementById("myCanvas");
     				var ctx = c.getContext("2d");
 				var img = new Image();
-   				ctx.drawImage(img,10,10);
-				}
+   				img.onload = function() { 
+					ctx.drawImage(img,10,10);
+				};
 			img.src = "images/headlamp.png";
 		</script>
 			</section>
