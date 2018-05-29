@@ -119,7 +119,7 @@
 
 						function myCanvas() {
 							var cantidadFotos = 50;
-						    	
+						   if (myArray.lenght < 51){
 							var numeroAleatorio = Math.ceil(Math.random()*cantidadFotos);
 							var flag = false;
 							for(var i=0;i<myArray.length;i++){
@@ -132,10 +132,7 @@
 								myArray[myArray.length] = numeroAleatorio;
 								var str="images/medium/" + numeroAleatorio + ".jpg";
 							}
-							if(myArray.lenght==50){
-								myArray = [];
-							}
-    							var c = document.getElementById("myCanvas");
+   							var c = document.getElementById("myCanvas");
     							var ctx = c.getContext("2d");
 							var img = new Image();
 							var sound = document.getElementById("audio");
@@ -144,6 +141,8 @@
 								sound.play();
 						        };
 							img.src = str;
+						    };
+						    else { myArray = []; }
 						};
 					</script>
 				</header>
