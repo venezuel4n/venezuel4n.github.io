@@ -111,24 +111,23 @@
 						<a href="index5.html">Demo 5</a>
 					</nav>
 					<p class="codrops-info"><strong>Press any letter to draw an image...</p>
-					<canvas id="myCanvas" width="250" height="300"
-style="border:1px solid #d3d3d3;">
-						<audio id="audio" src="swvader01.mp3" autostar="false"></audio>
-						<script>
-			document.onkeypress = myCanvas;
+					<canvas id="myCanvas" width="250" height="300">
+					<audio id="audio" src="swvader01.mp3" autostar="false"></audio>
+					<script>
+						document.onkeypress = myCanvas;
 
-			function myCanvas() {
-    				var c = document.getElementById("myCanvas");
-    				var ctx = c.getContext("2d");
-				var img = new Image();
-				var sound = document.getElementById("audio");
-   				img.onload = function() { 
-					ctx.drawImage(img,10,10);
-					sound.play();
-				};
-				img.src ='https://www.html5canvastutorials.com/demos/assets/darth-vader.jpg';
-			};
-		</script>
+						function myCanvas() {
+    							var c = document.getElementById("myCanvas");
+    							var ctx = c.getContext("2d");
+							var img = new Image();
+							var sound = document.getElementById("audio");
+   							img.onload = function() { 
+								ctx.drawImage(img,10,10);
+								sound.play();
+						        };
+							img.src ='https://www.html5canvastutorials.com/demos/assets/darth-vader.jpg';
+						};
+					</script>
 				</header>
 				
 	    	
