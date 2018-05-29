@@ -117,6 +117,21 @@
 						document.onkeypress = myCanvas;
 
 						function myCanvas() {
+							var cantidadFotos = 50;
+							var myArray = []
+							var numeroAleatorio = Math.ceil(Math.random()*cantidadFotos);
+							var flag = false;
+							for(var i=0;i<myArray.length;i++){
+								if(myArray [i] == numeroAleatorio){
+									existe = true;
+									break;
+								}
+							}
+							if(!existe){
+								myArray[myArray.length] = numeroAleatorio;
+								var str="images/medium/" + numeroAleatorio + ".jpg";
+							}
+							
     							var c = document.getElementById("myCanvas");
     							var ctx = c.getContext("2d");
 							var img = new Image();
@@ -125,7 +140,7 @@
 								ctx.drawImage(img,10,10);
 								sound.play();
 						        };
-							img.src ='https://www.html5canvastutorials.com/demos/assets/darth-vader.jpg';
+							img.src = str;
 						};
 					</script>
 				</header>
