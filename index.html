@@ -120,6 +120,7 @@
 						function myCanvas() {
 							var cantidadFotos = 50;
 							var numeroAleatorio = Math.ceil(Math.random()*cantidadFotos);
+							if(myArray.lenght == 50){ myArray.lenght = 0;}
 							var flag = false;
 							for(var i=0;i<myArray.length;i++){
 								if(myArray [i] == numeroAleatorio){
@@ -130,7 +131,6 @@
 							if(!flag){
 								myArray[myArray.length] = numeroAleatorio;
 								var str="images/medium/" + numeroAleatorio + ".jpg";
-								if(myArray.lenght == 50){ myArray.lenght = 0;}
 							}
    							var c = document.getElementById("photo");
     							var ctx = c.getContext("2d");
