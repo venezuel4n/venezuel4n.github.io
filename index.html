@@ -124,8 +124,10 @@
 							var flag = false;
 							for(var i=0;i<myArray.length;i++){
 								if(myArray [i] == numeroAleatorio){
-									flag = true;
-									break;
+									//flag = true;
+									//break;
+									numeroAleatorio = Math.ceil(Math.random()*cantidadFotos);
+									i=0;
 								}
 							}
 							if(!flag){
