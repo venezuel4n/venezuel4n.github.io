@@ -115,14 +115,16 @@
 					<audio id="audio" src="swvader01.mp3" autostar="false"></audio>
 					<script>
 						var myPhotos = []
+						var reset = false;
 						document.onkeypress = myCanvas;
-						if (myPhotos.lenght == 50) { myPhotos.lenght = 0;}
 
 						function myCanvas() {
 							var myArray = myPhotos;
 							var cantidadFotos = 50;
 							var numeroAleatorio = Math.ceil(Math.random()*cantidadFotos);
 							var flag = false;
+						 	if (reset) { myPhotos.lenght = 0;}
+
 							for(var i=0;i<myArray.length;i++){
 								if(myArray [i] == numeroAleatorio){
 									flag = true;
