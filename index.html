@@ -114,7 +114,8 @@
 					<canvas id="photo" width="250" height="300">
 					<audio id="audio" src="swvader01.mp3" autostar="false"></audio>
 					<script>
-
+						var myPhotos = []
+						document.onkeypress = myCanvas();
 						function myCanvas(rst) {
 							var myArray = myPhotos;
 							var cantidadFotos = 50;
@@ -144,8 +145,7 @@
 						        };
 							img.src = str;
 						};
-						var myPhotos = []
-						document.onkeypress = myCanvas();	
+	
 					</script>
 				</header>
 				
