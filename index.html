@@ -116,10 +116,8 @@
 					<script>
 						var myPhotos = [];
 						myPhotos.lenght = 0;
-						while (myPhotos.lenght < 51) {
-							document.onkeypress = myCanvas;
-							if (myPhotos.lenght == 50) { myPhotos.lenght = 0;}
-						}
+						document.onkeypress = myCanvas;
+						if (myPhotos.lenght == 50) { myPhotos.lenght = 0;}
 
 						function myCanvas() {
 							var myArray = myPhotos;
