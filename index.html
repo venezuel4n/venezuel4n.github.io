@@ -115,13 +115,14 @@
 					<audio id="audio" src="swvader01.mp3" autostar="false"></audio>
 					<script>
 						var myPhotos = []
+						var index = 0;
 						document.onkeypress = myCanvas;
-						if (myPhotos.lenght == 50) { myPhotos.lenght = 0;}
 						function myCanvas() {
 							var myArray = myPhotos;
 							var cantidadFotos = 50;
 							var numeroAleatorio = Math.ceil(Math.random()*cantidadFotos);
 							var flag = false;
+							if (index == 50) { myPhotos.lenght = 0; index = 0;}
 							for(var i=0;i<myArray.length;i++){
 								if(myArray [i] == numeroAleatorio){
 									flag = true;
@@ -133,7 +134,7 @@
 							if(!flag){
 								myArray[myArray.length] = numeroAleatorio;
 								var str="images/medium/" + numeroAleatorio + ".jpg";
-								
+								index ++;
 								var c = document.getElementById("photo");
     								var ctx = c.getContext("2d");
 								var img = new Image();
