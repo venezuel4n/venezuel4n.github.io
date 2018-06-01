@@ -133,16 +133,18 @@
 							if(!flag){
 								myArray[myArray.length] = numeroAleatorio;
 								var str="images/medium/" + numeroAleatorio + ".jpg";
-							}
-   							var c = document.getElementById("photo");
-    							var ctx = c.getContext("2d");
-							var img = new Image();
-							var sound = document.getElementById("audio");
-   							img.onload = function() { 
+								
+								var c = document.getElementById("photo");
+    								var ctx = c.getContext("2d");
+								var img = new Image();
+								var sound = document.getElementById("audio");
+   								img.onload = function() { 
 								ctx.drawImage(img,10,10);
 								sound.play();
-						        };
-							img.src = str;
+						        	};
+								img.src = str;
+
+							}
 						};
 					</script>
 				</header>
