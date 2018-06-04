@@ -176,3 +176,11 @@ a img {
 	margin-top: 30px;
 	text-align: left;
 }
+
+.photo {
+	position: absolute;
+	width: 50%;
+  	height: 50%;
+  	top: 25%;
+  	left: 25%;
+}
