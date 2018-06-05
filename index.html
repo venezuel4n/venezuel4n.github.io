@@ -93,11 +93,11 @@
 					</div>
 					<audio id="audio" src="swvader01.mp3" autostar="false"></audio>
 					<script>
-						var myPhotos = [];
+						var myArray = [];
 						var index = 0;
 						document.onkeypress = myCanvas;
 						function myCanvas() {
-							var myArray = myPhotos;
+							//var myArray = myPhotos;
 							var cantidadFotos = 50;
 							var numeroAleatorio = Math.ceil(Math.random()*cantidadFotos);
 							var flag = false;
@@ -106,7 +106,7 @@
 								//	myPhotos.pop(); // No hace nada, al igual que myPhotos = [] o myPhotos.lenght = 0... 
 								//}
 								index = 0; //Esto sí se ejecuta
-								myPhotos = [];
+								myArray = [];
 							}
 							for(var i=0;i<myArray.length;i++){
 								if(myArray [i] == numeroAleatorio){
