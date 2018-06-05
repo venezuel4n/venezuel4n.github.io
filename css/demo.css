@@ -135,8 +135,8 @@ a img {
 .codrops-header-special{
 	position: absolute;
 	top: 80px;
-	left: 0px;
-	text-align: left;
+	left: 50%;
+	text-align: center;
 }
 
 .codrops-header-special h2{
