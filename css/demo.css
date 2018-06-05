@@ -134,7 +134,7 @@ a img {
 
 .codrops-header-special{
 	position: absolute;
-	top: 30%;
+	top: 25%;
 	left: 38%;
 	text-align: center;
 }
@@ -177,10 +177,3 @@ a img {
 	text-align: left;
 }
 
-.photo {
-	position: absolute;
-	width: 50%;
-  	height: 50%;
-  	top: 25%;
-  	left: 25%;
-}
