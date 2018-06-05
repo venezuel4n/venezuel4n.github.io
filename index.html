@@ -110,12 +110,11 @@
 							}
 							for(var i=0;i<myArray.length;i++){
 								if(myArray [i] == numeroAleatorio){
-									//flag = true;
-									//break;
+									flag = true;
 									numeroAleatorio = Math.ceil(Math.random()*cantidadFotos);
 									i=0;
-									//document.getElementById("view").innerHTML = i;
 								}
+								else{flag=flase;}
 							}
 							if(!flag){
 								myArray[myArray.length] = numeroAleatorio;
