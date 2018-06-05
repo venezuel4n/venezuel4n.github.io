@@ -87,6 +87,7 @@
 				<header class="codrops-header-special">
 			
 					<p class="codrops-info"><strong>Press any letter to draw an image...</p>
+					<p id="view"></p>
 					<div style="text-align:center position:relative top:25% left:25%">
 						<canvas id="photo" width="500" height="600"></canvas>
 					</div>
@@ -113,6 +114,7 @@
 									//break;
 									numeroAleatorio = Math.ceil(Math.random()*cantidadFotos);
 									i=0;
+									document.getElementById("view").innerHTML = i;
 								}
 							}
 							if(!flag){
