@@ -95,6 +95,7 @@
 							var cantidadFotos = 50;
 							var numeroAleatorio = Math.ceil(Math.random()*cantidadFotos);
 							var flag = false;
+							
 							if (index == 50) { //Intento 1kk de borrar el puto arreglo, index es igual a myPhotos.lenght
 								index = 0; //Esto sí se ejecuta
 								myArray = [];
@@ -115,6 +116,7 @@
     								var ctx = c.getContext("2d");
 								var img = new Image();
 								var sound = document.getElementById("audio");
+								ctx.clearRect(0, 0, canvas.width, canvas.height);
    								img.onload = function() { 
 								ctx.drawImage(img,5,5);
 								sound.play();
